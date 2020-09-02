@@ -4,8 +4,10 @@ public class CheckPrimeNumber {
     public static boolean check(int number) {
         boolean prime = true;
 
-        if (number <= 2) {
+        if (number == 1) {
             return false;
+        } else if (number == 2) {
+            return true;
         }
 
         for (int i = 2; i <= number - 1; i++) {
